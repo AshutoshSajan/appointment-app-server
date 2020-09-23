@@ -15,6 +15,8 @@ var cors = require("cors");
 var app = express();
 app.use(cors());
 
+console.log(process.env.MONGO_DB_ATLAS_URI, "process.env.MONGO_DB_ATLAS_URI");
+
 mongoose.connect(process.env.MONGO_DB_ATLAS_URI, {
   useNewUrlParser: true,
   useFindAndModify: false,
