@@ -8,11 +8,15 @@ var eventSchema = new Schema({
         required: true,
     },
     start: {
-        type: String,
+        type: Date,
         required: true
     },
-    end: {
+    allDay: {
         type: String,
+        default: false
+    },
+    end: {
+        type: Date,
         required: true
     }
 }, { timestamps: true })
