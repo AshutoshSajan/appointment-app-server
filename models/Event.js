@@ -11,6 +11,10 @@ var eventSchema = new Schema({
         type: Date,
         required: true
     },
+    allDay: {
+        type: String,
+        default: false
+    },
     end: {
         type: Date,
         required: true
